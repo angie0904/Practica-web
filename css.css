@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #ffff;
-    height: 3vh;
+    height: 5vh;
     margin: 0;
     padding: 6px;
 
@@ -93,7 +93,7 @@ body {
         h1 {
             text-align: center;
 
-            font-size: 8rem;
+            font-size: 7rem;
             font-family: "Dancing Script", cursive;
 
         }
@@ -106,21 +106,22 @@ body {
         flex-flow: column;
         align-items: center;
 
-        .img {
-            /* clase img inicio */
+        
+            .img {
+                width: 54%;
+                height: 45vh;
+                padding-top: 29px;
+            }
 
-            width: 54%;
-            height: 30vh;
-        }
-
-        .esta {
-            width: 36%;
-            height: 40vh;
-        }
+            .esta {
+                width: 48%;
+                padding-left: 134px;
+                height: 40vh;
+            }
 
         div {
             display: flex;
-            padding: 18px;
+            padding: 11px;
 
         }
 
@@ -145,10 +146,14 @@ body {
     }
     .eventos{
         padding: 20px;
+        height: 227vh;
         .todo{
             padding: 30px;
             text-align: center;
             justify-content: space-around;
+            div{
+                padding-top: 82px;
+            }
         
         .ar{
             padding: 6px;
@@ -299,7 +304,7 @@ body {
     }
 
     .sc3 {
-        height: 34vh;
+        height: 40vh;
         padding: 20px;
     }
 
@@ -351,7 +356,7 @@ body {
     }
     .s2cine {
         /* tambien es parte de la seccion 2 de libros */
-        height: 84vh;
+        height: 90vh;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -387,7 +392,7 @@ body {
 
     .acc {
 
-        height: 57vh;
+        height: 72vh;
         padding: 20px;
     }
 
@@ -410,7 +415,7 @@ body {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 .reco{
-    height: 39vh;
+    height: 55vh;
     padding: 25px;
     text-align: center;
     select{
@@ -442,7 +447,7 @@ padding: 2px;
 
     h2 {
         text-align: center;
-        padding: 4%;
+        padding: 2%;
         font-size: 72px;
         color: white;
 
@@ -505,7 +510,7 @@ padding: 2px;
 
     h2 {
         text-align: center;
-        padding: 4%;
+        padding: 2%;
         font-size: 72px;
         color: white;
 
@@ -605,8 +610,9 @@ footer {
 /*Responsive CINE*/
 
 @media (max-width:1024px) {
+   
     .sc3 {
-        height: 40vh;
+        height: 50vh;
         padding: 20px;
     }
     .card {
@@ -615,8 +621,8 @@ footer {
         background: linear-gradient(180deg, rgba(229, 196, 249, 1) 0%, rgba(119, 140, 210, 1) 44%);
         padding: 20px;
         text-align: center;
-        width: 20%;
-        height: 23vh;
+        width: 24%;
+        height: 30vh;
         display: flex
 ;
         flex-flow: column;
@@ -629,6 +635,8 @@ footer {
         justify-content: space-around;
     }
 }
+
+
 @media (max-width:768px) {
     #s1ci>div {
         display: flex;
@@ -666,26 +674,51 @@ footer {
         padding: 20px;
         text-align: center;
         width: 29%;
-        height: 23vh;
+        height: 26vh;
         display: flex
 ;
         flex-flow: column;
         justify-content: space-between;
     }
+    
+}
+@media (max-width:425px) {
+    .sc2 {
+        height: 45vh;
+        padding: 20px;
+    }
+    .cajitas {
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+   
+    
 }
 
 
 /*Responsive PELIS*/
 
-@media (max-width:1024px) {
+
+
+
+
+@media (max-width:768px) {
+    .s2cine {
+        height: 92vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
     .reco {
-        height: 44vh;
+        height: 58vh;
         padding: 25px;
         text-align: center;
     }
 }
-
-@media (max-width:425px) {
+@media (max-width:500px) {
     .slider-containerP {
         position: relative;
         width: 100%;
@@ -694,11 +727,12 @@ footer {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     .acc {
-        height: 31vh;
+        height: 44vh;
         padding: 20px;
     }
+    
     .s2cine {
-        height: 144vh;
+        height: 178vh;
     text-align: center;
         .apartado {
             display: block;
@@ -718,13 +752,113 @@ footer {
         
     }
     .reco {
-        height: 51vh;
-        padding: 25px;
-        text-align: center;
+        height: 82vh;
+        
     }
 
     .imgseries {
         width: 78%;
         height: 33vh;
     }
+
+
 }
+/*Parte MUSICA*/
+
+    @media (max-width:500px) {
+        
+    }
+    .Artistas {
+       .can {
+           display: flex;
+           flex-wrap: wrap;
+           padding: 8px;
+       }
+   }
+
+   .Artistas {
+       .alb {
+           display: flex;
+           flex-wrap: wrap;
+           padding: 8px;
+       }
+   }
+
+   @media (max-width:456px) {
+    
+    .Artistas {
+        .alb {
+            display: block;
+        
+            
+        }
+    }
+
+    .Artistas {
+        .can {
+            display: block;
+            
+        }
+    }
+   }
+
+
+   /*Parte LIBROS*/
+
+   @media (max-width:673px) {
+    .li {
+        
+        padding: 21px;
+        margin: auto;
+        display: block;
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+    }
+    .lib{
+        text-align: center;
+
+        img{
+            width: 40%;
+    height: 41vh;
+        }
+    }
+
+    .pff {
+        display: block;
+        padding: 40px;
+        width: 100%;
+    }
+   }
+
+   
+   @media (max-width:427px) {
+    .slider-containerLi {
+        position: relative;
+        width: 77%;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+   }
+
+   @media (max-width:412px) {
+    footer {
+        div {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px;
+            align-items: center;
+        }
+    }
+   }
+
+   
+
+
+  
+
+
+

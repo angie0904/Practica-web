@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Protest+Revolution&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    
+
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    height: 3vh;
+    margin: 0;
+
+
+    svg {
+        width: 20px;
+    }
+
+    img {
+        width: 20px;
+    }
+
+}
+
+nav {
+    height: 10vh;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.logo img {
+    border-radius: 26px;
+    padding: 5px;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+}
+
+nav img {
+    width: 50px;
+}
+
+.menu {
+    padding: 14px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    box-shadow: inset;
+    border-radius: 6px;
+    background-color: white;
+}
+
+body {
+    /* Pagina Inicio */
+    background-color: rgb(250, 240, 249);
+
+    .s1 {
+        background: url(./img/ba.png);
+        /*banner*/
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+
+        h1 {
+            text-align: center;
+
+            font-size: 8rem;
+            font-family: "Dancing Script", cursive;
+
+        }
+    }
+
+    .s2 {
+        /* tambien es parte de la seccion 2 de libros */
+        padding: 7px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .img {
+            /* clase img inicio */
+
+            width: 54%;
+            height: 30vh;
+        }
+
+        .esta {
+            width: 36%;
+            height: 40vh;
+        }
+
+        div {
+            display: flex;
+            padding: 18px;
+
+        }
+
+        .apartado {
+            display: block;
+            width: 60%;
+        }
+    }
+
+    .boton {
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 8px;
+        padding: 7px 20px;
+
+    }
+
+    .boton:hover {
+        color: #C4A92D
+    }
+    .eventos{
+        padding: 20px;
+        .todo{
+            padding: 30px;
+            text-align: center;
+            justify-content: space-around;
+        
+        .ar{
+            padding: 6px;
+                display: flex;
+                justify-content: space-around;
+                article{
+                    width: 41%;
+                height: 32vh;
+                padding: 65px;
+                text-align: center;
+                }
+        }
+    }
+        img{
+            width: 123px;
+            height: 17vh;
+        }
+    }
+
+    /* Parte Cine*/
+    #s1ci {
+        height: 35vh;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #s1ci>div {
+        display: flex;
+        gap: 20px;
+
+
+        h2 {
+            color: white;
+            -webkit-text-stroke: 2px black;
+            font-size: 80px;
+        }
+
+        &>div {
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            flex-flow: column;
+            padding: 10px;
+            height: 35vh;
+        }
+    }
+
+    .peli {
+        background: url(./img/fondopelis.PNG);
+    }
+
+    .serie {
+        background: url(./img/fondo\ series.PNG);
+    }
+
+    .slider-container {
+        position: relative;
+        width: 30%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        
+        transition: opacity 0.5s;
+    }
+
+    .slide img {
+        width: 100%;
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+
+    }
+
+    .btn {
+        transition: background-color 0.3s ease;
+    }
+
+    .sc2 {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .carr {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .flecha {
+        display: contents;
+    }
+
+    svg {
+        fill: black;
+    }
+
+    svg:hover {
+        fill: #C4A92D;
+    }
+
+    .sc3 {
+        height: 30vh;
+        padding: 20px;
+    }
+
+    .card {
+        border: solid 1px rgba(229, 196, 249, 1);
+        border-radius: 8px;
+        background: linear-gradient(180deg, rgba(229, 196, 249, 1) 0%, rgba(119, 140, 210, 1) 44%);
+        padding: 20px;
+        text-align: center;
+        width: 25%;
+        height: 20vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        .icon {
+            display: flex;
+            justify-content: end;
+            justify-items: flex-end;
+        }
+    }
+
+    .cajitas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*PELIS*/
+    .pelis {
+        background: url(./img/fondopelis.PNG);
+        height: 20vh;
+
+        h2 {
+            font-size: 72px;
+            text-align: center;
+            color: white;
+            padding: 3%;
+            -webkit-text-stroke: 2px black;
+        }
+    }
+
+    .acc {
+
+        height: 57vh;
+        padding: 20px;
+    }
+
+    .slideP {
+        min-width: 100%;
+        transition: opacity 0.5s;
+        display: flex;
+
+        img {
+            width: 33%;
+            border: solid 10px white;
+        }
+    }
+
+    .slider-containerP {
+        position: relative;
+        width: 52%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+.reco{
+    height: 39vh;
+    padding: 25px;
+    text-align: center;
+}
+.in>input{
+    width: 56%;
+    padding: 46px 0;
+}
+}
+
+/*Parte Libros */
+.banL {
+    background: url(./img/124ab347-ba45-400d-a6d2-ef141180d4e5-510x306_10-libros-joyas-ocultas.png);
+    background-size: cover;
+    height: 20vh;
+
+    h2 {
+        text-align: center;
+        padding: 4%;
+        font-size: 72px;
+        color: white;
+
+    }
+}
+.nove{
+    padding: 20px;
+}
+
+.sliderLibros {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-containerLi {
+
+    position: relative;
+    width: 36%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.s2L {
+    padding: 7px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.imgli {
+    width: 20%;
+}
+
+.pff {
+    display: block;
+    width: 40%;
+
+    div {
+        display: flex;
+    }
+}
+
+.li {
+    display: flex;
+    padding: 21px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+/*MUSICA*/
+.musica {
+    background: url(./img/dd48dc3e5d241dd9a6bd3fcbfa156856.jpg);
+    height: 20vh;
+
+    h2 {
+        text-align: center;
+        padding: 4%;
+        font-size: 72px;
+        color: white;
+
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.Artistas {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+    h2 {
+        color: #7EF873;
+    }
+
+    h3,
+    p {
+        color: black;
+    }
+
+    .can {
+        display: flex;
+        padding: 8px;
+
+        div {
+            padding: 20px;
+        }
+
+        img {
+            width: 149px;
+            height: 145px;
+            border-radius: 90%;
+            box-shadow: 6px 5px #7ef873b9;
+        }
+    }
+
+    .alb {
+        display: flex;
+        padding: 8px;
+
+        div {
+            padding: 20px;
+            
+        }
+
+        img {
+            width: 149px;
+            height: 145px;
+            border-radius: 12px;
+        }
+    }
+}
+
+h2{
+    font-size: 36px;
+}
+
+
+footer {
+    background-color: #c8b0443f;
+    height: 20vh;
+    padding: 9px;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        padding: 9px;
+        align-items: center;
+
+        div {
+            display: block;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
